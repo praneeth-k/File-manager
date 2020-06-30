@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/folderItemConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingVertical="25dp">
+
+    <ImageView
+        android:id="@+id/folderImageView"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/outline_folder_black_24dp"
+        app:srcCompat="@drawable/outline_folder_black_24dp" />
+
+    <TextView
+        android:id="@+id/folderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_marginHorizontal="10dp"
+        android:textColor="#555555"
+        android:text=""
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/folderImageView"
+        app:layout_constraintStart_toEndOf="@id/folderImageView"
+        app:layout_constraintTop_toTopOf="@+id/folderImageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
